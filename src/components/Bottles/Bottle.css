@@ -1,0 +1,14 @@
+.card{
+    border: 2px solid teal;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* gap: 30px; */
+}
+
+.bottle img{
+    width: 250px;
+}
