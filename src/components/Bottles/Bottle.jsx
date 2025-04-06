@@ -1,5 +1,6 @@
 import React from 'react'
-const Bottle = ({bottle}) => {
+import './Bottle.css';
+const Bottle = ({bottle,handleAddToCart}) => {
     const {img,name,price,stock}=bottle
     return ( 
         <div className='card bottle'>
@@ -7,7 +8,7 @@ const Bottle = ({bottle}) => {
             <h3>{name}</h3>
             <p>${price}</p>
             <p>Available: {stock}</p>
-            <button>Purchase Now</button>
+            <button onClick={()=>handleAddToCart(bottle)}>Purchase Now</button>
         </div>
      );
 }
